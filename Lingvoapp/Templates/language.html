@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+
+<body>
+    <section id="group" class="group">
+        <h1 class="heading">Languages</h1>
+        <h3 class="title">Select a language to start learning</h3>
+        <div class="card-container">
+            <a href="French/" class="card2">
+                <img src="/media/images/france.png" alt="">
+                <h3>French </h3>
+            </a>
+            <a href="German/" class="card2">
+                <img src="/media/images/germany.png" alt="">
+                <h3> German</h3>
+
+
+            </a>
+            <a href="Gujarati/" class="card2">
+                <img src="/media/images/india.png" alt="">
+                <h3> Gujarati</h3>
+
+            </a>
+            <a href="Hindi/" class="card2">
+                <img src="/media/images/india.png" alt="">
+                <h3> Hindi</h3>
+
+            </a>
+            <a href="Spanish/" class="card2">
+                <img src="/media/images/spain.png" alt="">
+                <h3> Spanish</h3>
+            </a>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="{% static 'js/script.js'%}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+</head>
+
+<body class="container-fluid quiz-container">
+
+<div class="container-fluid" style="height: 77vh;">  
+  <form method="post" enctype="multipart/form-data">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-sm-10 col-12">
+        <h1 class="text-center mb-5 txt ml-5">Language Quiz</h1>
+        {%csrf_token%}
+        
+        <div class="question-container">
+          <h2 class="question-title text-center mb-5">{{data}}</h2>
+          <div class="row mb-2">
+            {% for i in option %}
+            <div class="col-md-6 mb-5">
+              <input onclick="verify(this)" type="button" value="{{i}}" 
+                class="btn btn-primary btn-block option-btn">
+            </div>
+            {% endfor %}
+        </div>
+            {% if messages %}
+                <div class="alert alert-danger mx-auto mt-5" style="height: 50px;width: 200px;font-size: 18px;text-align: center;" role="alert">
+                    {% for message in messages %}
+                    {{ message }}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            <!-- <div class="col-md-6">
+              <input onclick="verify(this)" type="button" value="{{queryset.option_2}}" 
+                class="btn btn-primary btn-block option-btn">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-">
+              <input onclick="verify(this)" type="button" value="{{queryset.option_3}}" 
+                class="btn btn-primary btn-block option-btn">
+            </div>
+            <div class="col-md-6">
+              <input onclick="verify(this)" type="button" value="{{queryset.option_4}}" 
+                class="btn btn-primary btn-block option-btn">
+            </div> -->
+          
+        </div>
+      </div>
+    </div>
+</div>
+
+<div style="display:none;">
+  <input id="i1" name="answer" type="text">
+</div>
+
+    <div class="bottom-buttons text-center mb-3">
+      <hr style="background:#c0c0c0;height:2px;border:none;" />
+      <button class="btn btn-secondary btn-skip">
+      <a href="/selection/{{lang}}" style="color:white;text-decoration:none;">Skip</a>
+    </button>
+      <button type="submit" value="Submit" class="btn btn-success">Submit</button>
+    </div>
+
+  </form>
+
+  <script src="{% static 'js/script.js'%}"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function verify(id){
+      let value1 = id.value;
+      document.getElementById('i1').value = value1;
+    }
+  </script>
+</body>
+
+</html>

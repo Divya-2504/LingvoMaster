@@ -1,0 +1,76 @@
+answer_id,option_1,option_2,option_3,option_4,correct_answer,question_id
+1,Good Morning,Good Afternoon,Good Evening,Good night,Good Morning,1
+2,Good Morning,Good Afternoon,Good Evening,Good night,Good Afternoon,2
+3,Good Morning,Good Afternoon,Good Evening,Good night,Good Evening,3
+4,Good Morning,Good Afternoon,Good Evening,Good night,Good night,4
+5,I am,You,He,She,I am,5
+6,You,I am,He,She,You,6
+7,He,You,I am,She,He,7
+8,I am,She,He,You,She,8
+9,He,We,They,She,We,9
+10,She,He,We,They,They,10
+11,Hello Paul,You are nice,She is very tall,Goodbye julia,Hello Paul,11
+12,She is very tall,Goodbye julia,You are nice,Hello Paul,Goodbye julia,12
+13,You are nice,She is very tall,Goodbye julia,Hello Paul,You are nice,13
+14,She is very tall,You are nice,Hello Paul,Goodbye julia,She is very tall,14
+15,You are nice,I am sorry,Good Evening,She is very tall,I am sorry,15
+16,beverages,water,food,bread,beverages,16
+17,beverages,water,food,bread,water,17
+18,beverages,water,food,bread,food,18
+19,beverages,water,food,bread,bread,19
+20,milk,tea,coffee,drink,milk,20
+21,milk,tea,coffee,drink,tea,21
+22,milk,tea,coffee,drink,coffee,22
+23,milk,tea,coffee,drink,drink,23
+24,table,keep,book,eat,table,24
+25,table,keep,book,eat,keep,25
+26,he's eating food,"I drink, you drink, he drinks",he eats bread,she's drinking milk,"I drink, you drink, he drinks",26
+27,she's drinking milk,he eats bread,"I drink, you drink, he drinks",he's eating food,he's eating food,27
+28,he eats bread,he's eating food,she's drinking milk,"I drink, you drink, he drinks",she's drinking milk,28
+29,"I drink, you drink, he drinks",she's drinking milk,he's eating food,he eats bread,he eats bread,29
+30,she's drinking milk,you're welcome!,he eats bread,"I drink, you drink, he drinks",you're welcome!,30
+31,happy,sad,cry,jumping,happy,31
+32,happy,sad,cry,jumping,sad,32
+33,happy,sad,cry,jumping,cry,33
+34,happy,sad,cry,jumping,jumping,34
+35,running,book,read,excuse me,running,35
+36,running,book,read,excuse me,book,36
+37,running,book,read,excuse me,read,37
+38,running,book,read,excuse me,excuse me,38
+39,spanish,german,french,english,spanish,39
+40,spanish,german,french,english,german,40
+41,"excuse me , please , I am sorry",do you speak spanish?,"no, I'm sorry. I speak german",nice to meet you,"excuse me , please , I am sorry",41
+42,"excuse me , please , I am sorry",do you speak spanish?,"no, I'm sorry. I speak german",nice to meet you,do you speak spanish?,42
+43,"excuse me , please , I am sorry",do you speak spanish?,"no, I'm sorry. I speak german",nice to meet you,"no, I'm sorry. I speak german",43
+44,"excuse me , please , I am sorry",do you speak spanish?,"no, I'm sorry. I speak german",nice to meet you,nice to meet you,44
+45,do you speak spanish?,"no, I'm sorry. I speak german",nice to meet you,"yes, water please","yes, water please",45
+46,doctor,builder,plumber,engineer,doctor,46
+47,plumber,engineer,doctor,builder,engineer,47
+48,engineer,doctor,builder,plumber,builder,48
+49,builder,plumber,engineer,doctor,plumber,49
+50,pilot,lawyer,police,student,pilot,50
+51,student,pilot,lawyer,police,lawyer,51
+52,police,student,pilot,lawyer,police,52
+53,lawyer,police,student,pilot,student,53
+54,lawyer,professor,student,teacher,teacher,54
+55,lawyer,student,teacher,professor,professor,55
+56,thief's are bad men,george is a good man,he was a thief,maria is a doctor,maria is a doctor,56
+57,george is a good man,he was a thief,maria is a doctor,thief's are bad men,he was a thief,57
+58,he was a thief,maria is a doctor,thief's are bad men,george is a good man,george is a good man,58
+59,maria is a doctor,thief's are bad men,george is a good man,he was a thief,thief's are bad men,59
+60,maria is a doctor,"yes,please",he was a thief,george is a good man,"yes,please",60
+61,ice cream,friend,taxi,phone,ice cream,61
+62,ice cream,friend,taxi,phone,friend,62
+63,ice cream,friend,taxi,phone,taxi,63
+64,my taxi,the passport,I need water,"I need a taxi, please",my taxi,64
+65,my taxi,the passport,I need water,"I need a taxi, please",the passport,65
+66,phone,passport,suitcase,my,phone,66
+67,phone,passport,suitcase,my,passport,67
+68,phone,passport,suitcase,my,suitcase,68
+69,I need water,"I need a taxi, please",she is my mother,I got hundred marks in exam,I need water,69
+70,I need water,"I need a taxi, please",she is my mother,I got hundred marks in exam,"I need a taxi, please",70
+71,my,need,Monday,Sunday,my,71
+72,my,need,Monday,Sunday,need,72
+73,my,need,Monday,Sunday,Monday,73
+74,she is my mother,I got hundred marks in exam,what's the time?,paul is my brother,she is my mother,74
+75,she is my mother,I got hundred marks in exam,what's the time?,paul is my brother,I got hundred marks in exam,75

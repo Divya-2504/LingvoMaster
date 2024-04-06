@@ -1,0 +1,208 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+<title>{{page}}</title>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="/media/images/logo.png" style="width:50px;height:50px;border-radius:40px">Lingvo Master
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="/" class="active">home</a>
+                </li>
+                <li>
+                    <a href="/about/" id="ctc">about</a>
+                </li>
+                <li>
+                    <a href="/contact/" id="ctc">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+    </header>
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="content">
+            <h1> Learn Online From Home</h1>
+            <p>Discover a new world of learning right from the comfort of your home with Lingvo Master.</p>
+            <div class="buttons">
+                {% if user.is_authenticated %}
+                <a href="/account/"><button>Account</button></a>
+                {% else %}
+                <a href="/signup/"> <button>Sign-Up</button></a><a href="/signin/"><button id="btn2">Log-In</button></a>
+                {% endif %}
+            </div>
+
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>
+                    trending courses
+                </h3>
+                <p>Explore our latest and most popular courses designed to boost your skills and knowledge.</p>
+
+
+            </div>
+            <div class="box">
+                <a href="/selection/" class="text-dark">
+                    <i class="fas fa-fire"></i>
+                </a>
+                <h3>
+                    Languages
+                </h3>
+                <p>Embark on a language-learning journey with our diverse selection of language courses.</p>
+
+
+            </div>
+            <div class="box">
+                <i class="fas fa-award"></i>
+                <h3>
+                    Courses
+                </h3>
+                <p>Learn from industry experts and experienced instructors who are passionate about teaching.</p>
+
+
+            </div>
+        </div>
+    </section>
+    <hr align="center">
+    <section class="info" id="info">
+        <h1 class="heading">Know About Us</h1>
+        <h3 class="title">Start your learning journey with us</h3>
+        <table>
+            <tr>
+                <td>
+                    <h3 class="Tcontent">Learn a New Language
+                    </h3>
+                    <p class="Tcontent">Start your journey towards learning a new language with our interactive and
+                        engaging courses. Whether you're a beginner or looking to enhance your language skills, we offer
+                        courses for all levels. Immerse yourself in the language and culture, and unlock new
+                        opportunities for personal and professional growth.</p>
+
+                </td>
+                <td class="imageTd">
+                    <img src="/media/images/Learn.png" class="image">
+                </td>
+            </tr>
+            <tr>
+                <td class="imageTd">
+                    <img src="/media/images/testing.png" class="image">
+                </td>
+                <td>
+                    <h3 class="Tcontent"> Practice by Taking Tests
+                    </h3>
+                    <p class="Tcontent">Enhance your learning experience by practicing what you've learned through
+                        interactive quizzes and tests. Our platform provides a variety of quizzes and assessments
+                        designed to reinforce your understanding of the material and track your progress. Test your
+                        knowledge, identify areas for improvement, and gain confidence in your language skills.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="Tcontent">Interactive Learning Experience
+                    </h3>
+                    <p class="Tcontent">Experience a dynamic and interactive learning environment that makes learning
+                        fun and effective. Our courses feature engaging multimedia content, interactive quizzes, and
+                        real-world scenarios to help you apply your knowledge. Collaborate with fellow learners and
+                        receive personalized feedback from instructors to maximize your learning experience.</p>
+
+                </td>
+                <td class="imageTd">
+                    <img src="/media/images/language.png" class="image">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="footer">
+        <div class="container7">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer_about">
+                        <span>Lingvo Master</span>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-user-graduate"></i> Learn New Things
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-laptop"></i> Easy and convinient
+                            </li>
+                        </ul>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Your Email">
+                            <button type="submit"><i class="fa fa-send"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer_widget">
+                        <h5>What we offer</h5>
+                        <ul>
+                            <li><a href="#">Bilingua</a></li>
+                            <li><a href="#"> Fluency</a></li>
+                            <li><a href="#">Proficiency</a></li>
+                            <li><a href="#">Vocabulary</a></li>
+                            <li><a href="#">Accent</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer_widget">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#">Our Vision</a></li>
+                            <li><a href="#">Our Mission</a></li>
+                            <li><a href="#">Meet the team</a></li>
+                            <li><a href="#">Introduce</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer_widget">
+                        <h5>Contact Us</h5>
+                        <ul class="footer-address">
+                            <li><i class="fa fa-phone"></i>888 7777 6666</li>
+                            <li><i class="fa fa-envelope"></i>LingvoMaster@gmail.com</li>
+                            <li><i class="fa fa-location-arrow"></i>LJ institute of engineering and technology
+                                Ahmedabad, Gujarat</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer_copyright_text">
+                            <p>Copyright &copy; 2024 Lingvo Master - All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer_copyright_social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="{% static 'js/script.js'%}"></script>
+
+</html>

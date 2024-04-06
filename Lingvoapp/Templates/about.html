@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo">
+            <img src="/media/images/logo.png" style="width:50px;height:50px;border-radius:40px" class="img1">Lingvo Master
+
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="/" class="active">home</a>
+                </li>
+                <li>
+                    <a href="/about/" id="ctc">about</a>
+                </li>
+                <li>
+                    <a href="/contact/" id="ctc">Contact</a>
+                </li>
+               
+            </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+    </header>
+    <div class="about-section">
+        <h2>Our Story</h2>
+        <p>Welcome to Lingvo Master, your ultimate language learning app! Our journey began with a vision to make
+            language learning accessible, engaging, and effective for everyone. Driven by our passion for languages and
+            technology, we set out to create an innovative platform that combines cutting-edge learning methods with
+            interactive experiences to help users master languages with confidence.</p>
+        <img src="/media/images/Story.png" alt="Our Story Image">
+    </div>
+
+    <div class="about-section">
+        <h2>Our Mission</h2>
+        <p>At Lingvo Master, our mission is to empower individuals worldwide to learn new languages with confidence and
+            ease. We strive to provide innovative tools, comprehensive resources, and personalized learning experiences
+            to help you achieve fluency in any language. With a focus on accessibility, inclusivity, and cultural
+            understanding, we aim to break down language barriers and foster meaningful connections between people from
+            diverse backgrounds.</p>
+        <img src="/media/images/mission.png" alt="Our Mission Image">
+    </div>
+
+    <div class="about-section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Interactive lessons tailored to your proficiency level</li>
+            <li>Real-life scenarios and dialogues for practical learning</li>
+            <li>Personalized progress tracking and feedback</li>
+            <li>Grammar and vocabulary exercises for comprehensive learning</li>
+            <li>Speech recognition technology for pronunciation practice</li>
+            <li>Multi-platform access: use Lingvo Master on your computer, tablet, or smartphone</li>
+            <li>Community forums and language exchange opportunities</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Lingvo Master. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="{% static 'js/script.js'%}"></script>
+
+
+</body>
+
+</html>

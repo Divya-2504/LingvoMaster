@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="/media/images/logo.png" style="width:50px;height:50px;border-radius:40px">Lingvo Master
+
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="/" class="active">home</a>
+                </li>
+                <li>
+                    <a href="/about/" id="ctc">about</a>
+                </li>
+                <li>
+                    <a href="/contact/" id="ctc">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+    </header>
+    <section class="contact" id="contact">
+
+
+        <div class="row">
+
+            <div class="image">
+
+                <img src="/media/images/contact.png" alt="">
+
+            </div>
+            <div class="form-container">
+                <form action="" name="form1" method="post">
+                    <input type="text" placeholder="Full Name" name="nm">
+                    <input type="email" placeholder="E-mail" name="em" required>
+                    <input type="text" placeholder="Phone" name="ph">
+                    <textarea id="" cols="30" rows="10" placeholder="Message" name="msg" required></textarea>
+                    <input type="button" value="message" id="submit" onclick="check()">
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <section id="group" class="group">
+        <h1 class="heading">Creators</h1>
+        <h3 class="title">Know more about the creators.</h3>
+        <div class="card-container">
+            <div class="card">
+                <img src="/media/images/logo.png" alt="">
+                <h3> Student 1</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-github"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/media/images/logo.png" alt="">
+                <h3> Student 2</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-github"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/media/images/logo.png" alt="">
+                <h3> Student 3</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-github"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/media/images/logo.png" alt="">
+                <h3> Student 4</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-github"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/media/images/logo.png" alt="">
+                <h3> Student 5</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-github"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Lingvo Master. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="{% static 'js/script.js'%}"></script>
+
+</body>
+
+
+</html>
